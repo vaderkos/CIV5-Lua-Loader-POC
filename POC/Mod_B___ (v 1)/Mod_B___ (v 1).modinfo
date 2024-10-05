@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2ab48903-b8e0-4e01-a0f9-527e9334e72d" version="1">
+  <Properties>
+    <Name>Mod_B___</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>B____ Testing</Teaser>
+    <Description>B____ Testing</Description>
+    <Authors>vader</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="98cd10b1-f077-4bf1-8496-052ac281242c" minversion="0" maxversion="999" title="ModLoader" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="6CB3DDF0F25073CB385CFA444573164A" import="1">Mod_B_Entrypoint.lua</File>
+    <File md5="31E56CE09D8A300AE73886171C14967C" import="0">RegisterModB.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>RegisterModB.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

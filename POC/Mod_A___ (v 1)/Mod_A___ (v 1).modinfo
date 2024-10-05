@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="27b147d3-f15d-4db3-b467-fd3f53f1352c" version="1">
+  <Properties>
+    <Name>Mod_A___</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>A____ Testing mod loader</Teaser>
+    <Description>A____ Testing mod loader</Description>
+    <Authors>vader</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="98cd10b1-f077-4bf1-8496-052ac281242c" minversion="0" maxversion="999" title="ModLoader" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="CB1A667877CBAF81C4777E3C9CE619B1" import="0">RegisterModA.sql</File>
+    <File md5="39249CB496EE5F78101F4762A773F92C" import="1">Mod_A_Entrypoint.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>RegisterModA.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

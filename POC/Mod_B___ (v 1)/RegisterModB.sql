@@ -1,0 +1,1 @@
+INSERT INTO ModLoader(filename, entrypoint) VALUES('ActionInfoPanel.lua', 'Mod_B_Entrypoint.lua');
